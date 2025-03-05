@@ -8,5 +8,5 @@ export default defineConfig({
     outDir: 'dist', // Specify the output folder
     emptyOutDir: true, // Empty outDir before building
   },
-  base: '/dist/', // Ensure correct base path
+  base: '/', // Ensure correct base path
 });
