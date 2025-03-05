@@ -8,5 +8,5 @@ export default defineConfig({
     outDir: 'dist', // Specify the output folder
     emptyOutDir: true, // Empty outDir before building
   },
-  base: '/striker49.github.io/striker49/', // Ensure correct base path
+  base: '/dist/', // Ensure correct base path
 });
