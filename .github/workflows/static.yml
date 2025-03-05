@@ -41,6 +41,8 @@ jobs:
         run: npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v4
+      - name: Check if vite is installed
+        run: npm list vite
       - name: Check if dist exists
         run: ls -l dist
       - name: Upload artifact
