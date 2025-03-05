@@ -39,6 +39,8 @@ jobs:
         run: npm install
       - name: Build
         run: npx vite build
+      - name: Check dist dir
+        run: ls -R dist
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
