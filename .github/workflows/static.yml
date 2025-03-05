@@ -37,8 +37,6 @@ jobs:
           cache: 'npm'
       - name: Install dependencies
         run: npm install
-      - name: Install Vue
-      - run: npm install vue @vitejs/plugin-vue @vue/compiler-sfc --save-dev
       - name: Build
         run: npm run build
       - name: Setup Pages
