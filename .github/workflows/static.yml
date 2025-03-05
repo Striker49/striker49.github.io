@@ -46,7 +46,7 @@ jobs:
       - name: Check if vite-view is installed
         run: npm install -D --save-dev vue-tsc @vitejs/plugin-vue
       - name: Check if dist exists
-        run: ls -l dist
+        run: ls -l ../dist
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
