@@ -5,8 +5,8 @@ import vue from '@vitejs/plugin-vue';
 export default defineConfig({
   plugins: [vue()], // Add the Vue plugin to handle .vue files
   build: {
-    outDir: '../dist', // Specify the output folder
+    outDir: 'dist', // Specify the output folder
     emptyOutDir: true, // Empty outDir before building
   },
-  base: '/dist/', // Ensure correct base path
+  base: '/striker49/', // Ensure correct base path
 });
