@@ -37,12 +37,12 @@ jobs:
           cache: 'npm'
       - name: Install dependencies
         run: npm install
-      - name: Install Vue
-        run: npm install @vitejs/plugin-vue
       - name: Build
         run: npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v4
+      - name: Check if dist exists
+        run: ls -l dist
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
