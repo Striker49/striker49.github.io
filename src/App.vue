@@ -1,12 +1,15 @@
 <script setup lang="ts">
 import Home from './components/Home.vue'
-import Nav from './components/Nav.vue'
 </script>
 
 <template>
   <div class="container">
     <header>
-      <Nav />
+      <nav>
+        <button @click="changeLanguage('en')">English</button>
+        <button @click="changeLanguage('fr')">Français</button>
+        <button @click="changeLanguage('es')">Español</button>
+      </nav>
     </header>
     <div class="section">
       <Home msg="Sébastien Roy" />
@@ -14,13 +17,13 @@ import Nav from './components/Nav.vue'
           <img src="/src/assets/seroy.jpg" class="avatar" alt="profile pic" />
         </p>
         <h1>
-          <b>About me</b>
+          <b>{{ $t("aboutMe") }}</b>
         </h1>
           <p>I finished the common core at 42 and I'm now looking for work opportunities or internships as a programmer.</p>
     </div>
     <div class="section">
       <h1>
-        <b>Technologies</b>
+        <b>{{ $t("technologies")}}</b>
       </h1>
         <div>
           <span class="tooltip"><img src="./assets/C_Programming_Language.png" width="100" height="100"/><span class="tooltiptext">C</span></span>
@@ -35,7 +38,7 @@ import Nav from './components/Nav.vue'
     </div>
     <div class="section">
       <h1>
-        <b>Projects</b>
+        <b>{{ $t("projects")}}</b>
       </h1>
         <p left="align">
           <li>ft_transcendence</li>
@@ -45,8 +48,24 @@ import Nav from './components/Nav.vue'
         </p>
     </div>
   </div>
-
+  <div class="section">
+    <h1>
+      <b>{{ $t("contact")}}</b>
+    </h1>
+      <p>Contact</p>
+  </div>
 </template>
+
+<script lang="ts">
+export default {
+  methods: {
+    changeLanguage(lang: string) {
+      this.$i18n.locale = lang;
+      localStorage.setItem('language', lang);
+    }
+  }
+};
+</script>
 
 <style scoped>
 .avatar {
