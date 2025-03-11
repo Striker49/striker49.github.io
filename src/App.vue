@@ -62,6 +62,7 @@ export default {
     changeLanguage(lang: string) {
       this.$i18n.locale = lang;
       localStorage.setItem('language', lang);
+      document.querySelector("[lang]")?.setAttribute("lang", lang);
     }
   }
 };

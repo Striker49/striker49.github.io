@@ -11,12 +11,11 @@ import es from './locales/es.json';
 
 // Create an i18n instance
 const i18n = createI18n({
-  locale: 'en', // Default language
-  fallbackLocale: 'en', // Fallback if translation is missing
+  locale: 'en',
+  fallbackLocale: 'en',
   messages: { en, fr, es }
 });
 
-// Create and mount the app with i18n
 const app = createApp(App);
 app.use(i18n);
 app.mount('#app');
