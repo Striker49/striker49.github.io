@@ -93,3 +93,19 @@ body {
   position: relative;
   margin-bottom: 200px;
 }
+.header {
+  position: fixed;
+  background: #021c4b;
+  height: 5rem;
+  width: 1000vh;
+  right: 0px;
+  top: 0;
+  z-index: 1;
+}
+.header-navbar {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+  align-items: right;
+}

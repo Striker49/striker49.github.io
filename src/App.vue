@@ -1,17 +1,44 @@
-<script setup lang="ts">
-import Home from './components/Home.vue'
+<script lang="ts">
+import { defineComponent } from 'vue';
+
+export default defineComponent({
+  data() {
+    return {
+      selectedLanguage: "en",
+    };
+  },
+  methods: {
+    changeLanguage() {
+      this.$i18n.locale = this.selectedLanguage;
+      localStorage.setItem("lang", this.selectedLanguage);
+      document.documentElement.setAttribute("lang", this.selectedLanguage);
+    },
+  },
+  mounted() {
+    const storedLang = localStorage.getItem("lang");
+    if (storedLang) {
+      this.selectedLanguage = storedLang;
+      this.$i18n.locale = storedLang;
+      document.documentElement.setAttribute("lang", storedLang);
+    }
+  },
+});
 </script>
 
 <template>
   <div class="container">
-    <header>
-      <nav>
-        <button @click="changeLanguage('en')">English</button>
-        <button @click="changeLanguage('fr')">Français</button>
-        <button @click="changeLanguage('es')">Español</button>
+    <header class="header">
+      <nav class="header-navbar">
+        <img src="/src/assets/languages.png" alt="Language Icon" style="position: relative; height: 2rem; right: 10px; top: 0.5rem">
+        <label for="language"></label>
+        <select id="language" name="language" v-model="selectedLanguage" @change="changeLanguage">
+          <option value="en">English</option>
+          <option value="fr">French</option>
+          <option value="es">Spanish</option>
+        </select>
       </nav>
     </header>
-    <div class="section">
+    <div class="section" style="top: 4rem;">
       <Home msg="Sébastien Roy" />
         <p>
           <img src="/src/assets/seroy.jpg" class="avatar" alt="profile pic" />
@@ -40,12 +67,12 @@ import Home from './components/Home.vue'
       <h1>
         <b>{{ $t("projects")}}</b>
       </h1>
-        <p left="align">
+        <div left="align">
           <li>ft_transcendence</li>
           <li>webserv</li>
           <li>inception</li>
           <li>cub3d</li>
-        </p>
+        </div>
     </div>
   </div>
   <div class="section">
@@ -56,17 +83,8 @@ import Home from './components/Home.vue'
   </div>
 </template>
 
-<script lang="ts">
-export default {
-  methods: {
-    changeLanguage(lang: string) {
-      this.$i18n.locale = lang;
-      localStorage.setItem('language', lang);
-      document.querySelector("[lang]")?.setAttribute("lang", lang);
-    }
-  }
-};
-</script>
+
+
 
 <style scoped>
 .avatar {

@@ -9,9 +9,11 @@ import en from './locales/en.json';
 import fr from './locales/fr.json';
 import es from './locales/es.json';
 
+const savedLanguage = localStorage.getItem('language') || 'en';
+
 // Create an i18n instance
 const i18n = createI18n({
-  locale: 'en',
+  locale: savedLanguage,
   fallbackLocale: 'en',
   messages: { en, fr, es }
 });
@@ -19,3 +21,4 @@ const i18n = createI18n({
 const app = createApp(App);
 app.use(i18n);
 app.mount('#app');
+
