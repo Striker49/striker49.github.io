@@ -24,6 +24,7 @@ a:hover {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  color:#deea5a;
   text-shadow: 0 0.1em #050958aa;
 }
 
@@ -63,10 +64,13 @@ button:focus-visible {
     background-color: #ffffff;
   }
   a:hover {
-    color: #747bff;
+    color: #dd1515;
   }
   button {
     background-color: #f9f9f9;
+  }
+  .static:hover {
+    opacity: 0;
   }
 }
 
@@ -84,6 +88,9 @@ footer {
   position: relative; /* or fixed/absolute if needed */
   background-color: #021c4b;
   left: 0;
+  border-top-width: 5px;
+  border-top-style: solid;
+  border-top-color: #000000;
 }
 p {
   display: inline-block;
@@ -100,9 +107,16 @@ header {
 header ul {
   display: flex;
   justify-content: center;
+  margin-top: 0.75rem;
   gap: 6rem;
   align-items: center;
-  margin-top: 2rem;
+  font-size: 2em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  filter: drop-shadow(2px 3px 2px #590124);
+}
+header ul li a{
+  color: #b6034b;
+  font-weight: 650;
 }
 .icon {
   position: flex;
@@ -124,8 +138,11 @@ ul {
 }
 .section {
   position: relative;
-  margin-top: 7rem;
+  margin-top: 6rem;
   margin-bottom: 7rem;
+}
+.static {
+  position: absolute;
 }
 #home, #skills, #projects {
   scroll-margin-top: 100px;

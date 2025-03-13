@@ -28,7 +28,7 @@ export default defineComponent({
 <template>
   <div>
     <header class>
-      <img src="/src/assets/sr2.png" alt="Language Icon" style="position: absolute; height: 5rem; width: 5rem; left: 0rem">
+      <img src="/src/assets/sr2.png" alt="Language Icon" style="position: absolute; height: 5rem; width: 5rem; left: 0rem;">
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#skills">Skills</a></li>
@@ -47,7 +47,7 @@ export default defineComponent({
         </div>
     </header>
     <div class="section" id="home">
-      <H1>Sébastien Roy</H1>
+      <H1 style="font-size: 4em;color:aliceblue">Sébastien Roy</H1>
         <p>
           <img src="/src/assets/seroy.jpg" class="avatar" alt="profile pic" style="filter: drop-shadow(0 0 1em #050958aa);" />
         </p>
@@ -58,7 +58,7 @@ export default defineComponent({
     </div>
     <div class="section" id="skills">
       <h1>
-        <b>{{ $t("technologies")}}</b>
+        <b>{{ $t("skills")}}</b>
       </h1>
         <div style="position: relative; top: 2rem;">
           <span class="tooltip"><img class="icon" src="./assets/C_Programming_Language.png" width="100" height="100"/><span class="tooltiptext">C</span></span>
@@ -79,16 +79,16 @@ export default defineComponent({
           <li class="project" data-img="/src/assets/game.png"><h2>ft_transcendence</h2><img src="/src/assets/game.png" height="400px" width="500"><div class="projectDesc">{{ $t("transcendenceDesc") }}</div></li>
           <li class="project" data-img="/src/assets/no_Image_Available.jpg"><h2 class="project">Webserv</h2><div><img src="/src/assets/no_Image_Available.jpg" alt="Webserv image" height="400px"><div>{{ $t("webservDesc") }}</div></div></li>
           <li class="project" data-img="/src/assets/no_Image_Available.jpg"><h2 class="project">Inception</h2><div><img src="/src/assets/no_Image_Available.jpg" alt="Inception image" height="400px"><div>{{ $t("inceptionDesc") }}</div></div></li>
-          <li class="project" data-img="/src/assets/cub3d.gif"><h2 class="project">Cub3D</h2><div><img src="/src/assets/cub3d.gif" alt="Cub3D image" height="400px"><div>{{ $t("cub3dDesc") }}</div></div></li>
+          <li class="project" data-img="/src/assets/cub3d.png" data-gif="/src/assets/cub3d.gif"><h2 class="project">Cub3D</h2><div><img class="static" src="/src/assets/cub3d.png" alt="Cub3D image" height="400px"><img class="active" src="/src/assets/cub3d.gif" alt="Cub3D gif" height="400px"><div>{{ $t("cub3dDesc") }}</div></div></li>
         </ul>
     </div>
   </div>
   <footer id="contact">
-    <h2 style="position: relative; top: 1rem;">
+    <h2 style="position: relative; color: #96003c; filter: drop-shadow(2px 3px 2px #590124);">
       <b>{{ $t("contact")}}</b>
     </h2>
       <div>
-        <ul style="position: relative; display: table; margin: 0 auto; text-align: left; top: 0rem; font-size: 16px">
+        <ul style="position: relative; display: table; margin: 0 auto; text-align: left; top: -1rem; font-size: 1em">
           <li style="position: relative; margin-top: 0.5rem"><a href="mailto:roy_sebastien@hotmail.fr"><img src="/src/assets/mail.png" style="position: relative; height: 1rem; right: 1rem; top: 3px">roy_sebastien@hotmail.fr</a></li>
           <li style="position: relative; margin-top: 0.5rem"><a href="https://www.linkedin.com/in/sebastien-roy-prog/"><img src="/src/assets/linkedin.png" style="position: relative; height: 1rem; right: 1rem">LinkedIn</a></li>
           <li style="position: relative; margin-top: 0.5rem"><a href="https://github.com/Striker49"><img src="/src/assets/github-mark-white.png" style="position: relative; height: 1rem; right: 1rem">Github</a></li>
