@@ -1,6 +1,13 @@
 {
     "aboutMe": "About me",
+    "aboutMeParagraph": "Hello, I'm Sébastien. I'm a software developer who thrives on solving complex problems and expanding my technical horizons. Having completed the rigourous 42 Common Core curriculum at 42 Québec, I've developed strong fundamentals in computer science and software engineering through hands-on, project based learning. I'm an active volunteer at tech events and meetups.\nCurrently seeking internship and work opportunities where I can apply my technical skills while continuing to grow as a developer.\nLet's build something amazing together!",
     "technologies": "Technologies",
     "projects": "Projects",
-    "contact": "Contact"
+    "contact": "Contact",
+    "download": "Download my Resume",
+    "transcendenceDesc": "A feature-rich school(42) project implementing advanced backend, frontend, and gaming functionalities with support for multiple languages, 3D graphics, AI opponents, and more.",
+    "cub3dDesc": "3D game using raycasting",
+    "inceptionDesc": "System admnistration project with Docker",
+    "webservDesc": "Web server",
+    "email": "Email"
 }

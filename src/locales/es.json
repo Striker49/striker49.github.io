@@ -1,6 +1,13 @@
 {
     "aboutMe": "Sobre mi",
+    "aboutMeParagraph": "Hola, me llamo Sebastián. Soy un desarrollador de software que disfruta resolviendo problemas complejos y ampliando mis horizontes técnicos. Tras completar la rigurosa formación de base commún en 42 Québec, he desarrollado fundamentos sólidos en ciencias de la computación e ingeniería de software.\nActualmente busco prácticas y oportunidades laborales donde pueda aplicar mis habilidades técnicas mientras continúo creciendo como desarrollador.\nConstruyamos algo increíble juntos!",
     "technologies": "Tecnologías",
     "projects": "Proyectos",
-    "contact": "Contactar"
+    "contact": "Contactar",
+    "download": "Descargar mi CV",
+    "transcendenceDesc": "Un proyecto escolar(42) rico en características que implementa funcionalidades avanzadas de backend, frontend y juegos con soporte para múltiples idiomas, gráficos 3D, oponentes de IA y más.",
+    "cub3dDesc": "Juego 3D con raycasting",
+    "inceptionDesc": "Proyecto de administración de sistemas con Docker",
+    "webservDesc": "Web server",
+    "email": "Correo electrónico"
 }
