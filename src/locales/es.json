@@ -3,11 +3,11 @@
     "aboutMeParagraph": "Hola, me llamo Sebastián. Soy un desarrollador de software que disfruta resolviendo problemas complejos y ampliando mis horizontes técnicos. Tras completar la rigurosa formación de base commún en 42 Québec, he desarrollado fundamentos sólidos en ciencias de la computación e ingeniería de software.\nActualmente busco prácticas y oportunidades laborales donde pueda aplicar mis habilidades técnicas mientras continúo creciendo como desarrollador.\nConstruyamos algo increíble juntos!",
     "skills": "Competencias",
     "projects": "Proyectos",
-    "contact": "Contactar",
+    "contact": "Contactarme",
     "download": "Descargar mi CV",
-    "transcendenceDesc": "Un proyecto escolar(42) rico en características que implementa funcionalidades avanzadas de backend, frontend y juegos con soporte para múltiples idiomas, gráficos 3D, oponentes de IA y más.",
-    "cub3dDesc": "Juego 3D con raycasting",
-    "inceptionDesc": "Proyecto de administración de sistemas con Docker",
-    "webservDesc": "Web server",
+    "transcendenceDesc": "Un proyecto escolar avanzado que implementa funcionalidades backend, frontend y de juego, con soporte multilingüe, gráficos 3D, oponentes con IA y mucho más.",
+    "cub3dDesc": "Un motor de juego 3D simplificado que utiliza la técnica de Raycasting, inspirado en Wolfenstein 3D, para renderizar un entorno en primera persona con la biblioteca gráfica MLX42.",
+    "inceptionDesc": "Configuración de un sistema seguro y contenerizado con Docker Compose, gestionando múltiples servicios (NGINX, WordPress, MariaDB) y aplicando las mejores prácticas de aislamiento y despliegue.",
+    "webservDesc": "Desarrollo de un servidor web HTTP ligero en C++ desde cero, capaz de manejar solicitudes de clientes, gestionar conexiones y ejecutar CGI.",
     "email": "Correo electrónico"
 }

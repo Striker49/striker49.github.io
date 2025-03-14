@@ -36,7 +36,7 @@ export default defineComponent({
           <li><a href="#contact">Contact</a></li>
         </ul>
         <div style="position: absolute; top: 1rem; right: 1rem;">
-          <a href="/src/assets/CV 2025_FR_EN.pdf.pdf" download="roy_sebastien" style="position: relative; margin-right: 3rem;"><img src="/src/assets/download-white.png" style="position: relative; height: 1rem; right: 0.5rem;">{{ $t("download") }}</a>
+          <a href="/src/assets/CV 2025_FR_EN.pdf.pdf" download="roy_sebastien" id="download" style="position: relative; margin-right: 3rem;"><img src="/src/assets/download-white.png" style="position: relative; height: 1rem; right: 0.5rem;">{{ $t("download") }}</a>
           <img src="/src/assets/languages.png" alt="Language Icon" style="position: relative; height: 2rem; right: 10px; top: 0.5rem">
           <label for="language" style="position: fixed; right: 0"></label>
           <select id="language" name="language" v-model="selectedLanguage" @change="changeLanguage">
@@ -77,11 +77,12 @@ export default defineComponent({
       </h1>
         <ul class="projectList" style="position: relative; justify-content: center">
           <li class="project" data-img="/src/assets/game.png"><h2>ft_transcendence</h2><img src="/src/assets/game.png" height="400px" width="500"><div class="projectDesc">{{ $t("transcendenceDesc") }}</div></li>
-          <li class="project" data-img="/src/assets/no_Image_Available.jpg"><h2 class="project">Webserv</h2><div><img src="/src/assets/no_Image_Available.jpg" alt="Webserv image" height="400px"><div>{{ $t("webservDesc") }}</div></div></li>
-          <li class="project" data-img="/src/assets/no_Image_Available.jpg"><h2 class="project">Inception</h2><div><img src="/src/assets/no_Image_Available.jpg" alt="Inception image" height="400px"><div>{{ $t("inceptionDesc") }}</div></div></li>
-          <li class="project" data-img="/src/assets/cub3d.png" data-gif="/src/assets/cub3d.gif"><h2 class="project">Cub3D</h2><div><img class="static" src="/src/assets/cub3d.png" alt="Cub3D image" height="400px"><img class="active" src="/src/assets/cub3d.gif" alt="Cub3D gif" height="400px"><div>{{ $t("cub3dDesc") }}</div></div></li>
+          <li class="project" data-img="/src/assets/no_Image_Available.jpg"><h2 class="project">Webserv</h2><div><img src="/src/assets/no_Image_Available.jpg" alt="Webserv image" height="400px"><div class="projectDesc">{{ $t("webservDesc") }}</div></div></li>
+          <li class="project" data-img="/src/assets/no_Image_Available.jpg"><h2 class="project">Inception</h2><div><img src="/src/assets/no_Image_Available.jpg" alt="Inception image" height="400px"><div class="projectDesc">{{ $t("inceptionDesc") }}</div></div></li>
+          <li class="project" data-img="/src/assets/cub3d.png" data-gif="/src/assets/cub3d.gif"><h2 class="project">Cub3D</h2><div><img class="static" src="/src/assets/cub3d.png" alt="Cub3D image" height="400px"><img class="active" src="/src/assets/cub3d.gif" alt="Cub3D gif" height="400px"><div class="projectDesc">{{ $t("cub3dDesc") }}</div></div></li>
         </ul>
-    </div>
+        <a href="/src/assets/CV 2025_FR_EN.pdf.pdf" download="roy_sebastien" style="position: relative; margin-right: 3rem; font-size: 2rem; top: 4rem;"><img src="/src/assets/download-white.png" style="position: relative; height: 2rem; right: 0.5rem;">{{ $t("download") }}</a>
+      </div>
   </div>
   <footer id="contact">
     <h2 style="position: relative; color: #96003c; filter: drop-shadow(2px 3px 2px #590124);">

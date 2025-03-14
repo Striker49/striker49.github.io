@@ -73,14 +73,43 @@ button:focus-visible {
     opacity: 0;
   }
 }
+@media screen and (max-width: 800px) {
+  header {
+    background-color: #b6034b;
+    height: auto; /* Adjust header height */
+    padding: 0 0;
+  }
+
+  header ul { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    gap: 1rem !important; /* Adds spacing between menu items */
+  }
+
+  header ul li {
+    display: block;
+    width: 100%; /* Makes sure items take full width */
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1450px) {
+  #download {
+    display: none;
+  }
+}
+
 
 body {
   background: linear-gradient(135deg, #1e3c72, #2a5298);
   height: 100%;
+  width: 100vw;
   margin: 0;
   display: flex;
   color: white; /* Ensures text is visible */
   font-family: Arial, sans-serif;
+  overflow-x: hidden;
 }
 footer {
   width: 100%;
@@ -95,6 +124,7 @@ footer {
 p {
   display: inline-block;
   width: 60%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 header {
   position: fixed;
@@ -113,6 +143,7 @@ header ul {
   font-size: 2em;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   filter: drop-shadow(2px 3px 2px #590124);
+  min-width: 10%;
 }
 header ul li a{
   color: #b6034b;
@@ -130,6 +161,9 @@ ul {
 .project {
   width: 500px;
 }
+.projectDesc {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 .projectList {
   display: grid;
   grid-template-columns: max-content max-content;
@@ -146,4 +180,7 @@ ul {
 }
 #home, #skills, #projects {
   scroll-margin-top: 100px;
+}
+html {
+  scroll-behavior: smooth;
 }

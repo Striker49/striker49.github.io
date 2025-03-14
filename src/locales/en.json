@@ -3,11 +3,11 @@
     "aboutMeParagraph": "Hello, I'm Sébastien. I'm a software developer who thrives on solving complex problems and expanding my technical horizons. Having completed the rigourous 42 Common Core curriculum at 42 Québec, I've developed strong fundamentals in computer science and software engineering through hands-on, project based learning. I'm an active volunteer at tech events and meetups.\nCurrently seeking internship and work opportunities where I can apply my technical skills while continuing to grow as a developer.\nLet's build something amazing together!",
     "skills": "Skills",
     "projects": "Projects",
-    "contact": "Contact",
+    "contact": "Contact Me",
     "download": "Download my Resume",
-    "transcendenceDesc": "A feature-rich school(42) project implementing advanced backend, frontend, and gaming functionalities with support for multiple languages, 3D graphics, AI opponents, and more.",
-    "cub3dDesc": "3D game using raycasting",
-    "inceptionDesc": "System admnistration project with Docker",
-    "webservDesc": "Web server",
+    "transcendenceDesc": "A feature-rich school project implementing advanced backend, frontend, and gaming functionalities with support for multiple languages, 3D graphics, AI opponents, and more.",
+    "cub3dDesc": " Simplified 3D game engine using the Raycasting technique, inspired by Wolfenstein 3D, where you render a first-person perspective environment using the MLX42 graphics library.",
+    "inceptionDesc": "Setting up a secure, containerized system using Docker Compose, configuring multiple services (NGINX, WordPress, MariaDB) while enforcing best practices for isolation and deployment.",
+    "webservDesc": "Building a lightweight HTTP web server in C++ from scratch, handling client requests, managing connections, and supporting CGI execution",
     "email": "Email"
 }
