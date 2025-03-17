@@ -108,6 +108,10 @@ button:focus-visible {
     grid-template-columns: 1fr;
     padding: 0;
   }
+  .project-desc {
+    max-width: 80%;
+    margin-left: 10%;
+  }
 }
 body {
   background: linear-gradient(135deg, #1e3c72, #2a5298);
@@ -170,7 +174,7 @@ ul {
   width: 500px;
 }
 .project img {
-  max-width: 600px;
+  max-width: 100%;
   filter: drop-shadow(0 0 20px #020d45);
 }
 .project-desc {
