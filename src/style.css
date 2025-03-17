@@ -91,39 +91,41 @@ h2 {
     width: 100%;
     text-align: center;
   }
+  #menu-button {
+    display:block !important;
+  }
+  #menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background:#021c4b;
+    top: 67px;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+  }
+  #menu.show {
+    display: flex;
+  }
 }
 @media screen and (max-width: 1450px) {
   html, body {
     max-width: 100%;
   }
-  #download, #language-icon {
-    display: none;
-  }
   #project-list {
     justify-items: center;
     grid-template-columns: 1fr;
+    row-gap: 2rem;
     padding: 0;
   }
   .project-desc {
     max-width: 80%;
     margin-left: 10%;
   }
-  #menu-button {
-    display:block !important;
-  }
-  #menu {
-    display: none; /* Hide menu by default */
-    flex-direction: column;
-    position: absolute;
-    background:#021c4b;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    padding: 1rem;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  #menu.show {
-    display: flex;
+}
+@media screen and (max-width: 1500px) {
+  #download, #language-icon {
+    display: none;
   }
 }
 body {
@@ -142,9 +144,6 @@ footer {
   position: relative; /* or fixed/absolute if needed */
   background-color: #021c4b;
   left: 0;
-  border-top-width: 5px;
-  border-top-style: solid;
-  border-top-color: #000000;
 }
 p {
   display: inline-block;
@@ -153,6 +152,7 @@ p {
 }
 header {
   position: fixed;
+  justify-items: center;
   background: #021c4b;
   width: 100%;
   top: 0;
@@ -213,10 +213,10 @@ ul {
   scroll-margin-top: 100px;
 }
 #menu-button {
-  position:fixed;
-  margin-left: 46%;
-  font-size: 1.5rem;
-  margin-top: 0.5rem;
+  position:relative;
+  font-size: 1.25rem;
+  margin-top: 0.75rem;
+  margin-left: 2rem;
   display:none;
 }
 html {
