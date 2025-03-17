@@ -33,7 +33,7 @@ export default defineComponent({
           <li><a href="#home">{{ $t("Home") }}</a></li>
           <li><a href="#skills">{{ $t("skills") }}</a></li>
           <li><a href="#projects">{{ $t("projects") }}</a></li>
-          <li><a href="#contact">{{ $t("Contact") }}</a></li>
+          <li><a href="#contact">{{ $t("contact") }}</a></li>
         </ul>
         <div style="position: absolute; top: 1rem; right: 1rem;">
           <a href="/src/assets/CV 2025_FR_EN.pdf.pdf" download="roy_sebastien" id="download" style="position: relative; margin-right: 3rem;"><img src="/src/assets/download-white.png" style="position: relative; height: 1rem; right: 0.5rem;">{{ $t("download") }}</a>
@@ -48,7 +48,7 @@ export default defineComponent({
     </header>
     <div class="section" id="home">
       <H1 style="font-size: 4em;color:aliceblue">Sébastien Roy</H1>
-        <p>
+        <p id="avatar">
           <img src="/src/assets/seroy.jpg" class="avatar" alt="profile pic" style="filter: drop-shadow(0 0 1em #050958aa);" />
         </p>
         <h1>
@@ -75,7 +75,7 @@ export default defineComponent({
       <h1>
         <b>{{ $t("projects")}}</b>
       </h1>
-        <ul class="project-list" style="position: relative; justify-content: center">
+        <ul class="project-list" id="project-list" style="position: relative; justify-content: center">
           <li class="project" data-img="/src/assets/game.png"><h2>ft_transcendence</h2><img src="/src/assets/game.png" height="400px" width="500"><div class="project-desc">{{ $t("transcendenceDesc") }}</div></li>
           <li class="project" data-img="/src/assets/webserv.png"><h2 class="project">Webserv</h2><div><img src="/src/assets/webserv.png" alt="Webserv image" height="400px"><div class="project-desc">{{ $t("webservDesc") }}</div></div></li>
           <li class="project" data-img="/src/assets/no_Image_Available.jpg"><h2 class="project">Inception</h2><div><img src="/src/assets/no_Image_Available.jpg" alt="Inception image" height="400px"><div class="project-desc">{{ $t("inceptionDesc") }}</div></div></li>
@@ -86,7 +86,7 @@ export default defineComponent({
   </div>
   <footer id="contact">
     <h2 style="position: relative; color: #96003c;">
-      <b>{{ $t("contact")}}</b>
+      <b>{{ $t("contactMe")}}</b>
     </h2>
       <div>
         <ul style="position: relative; display: table; margin: 0 auto; text-align: left; top: -1rem; font-size: 1em">
@@ -102,35 +102,4 @@ export default defineComponent({
 
 
 <style scoped>
-.avatar {
-  border-radius: 50%;
-}
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
- 
-  transform: translateX(-110%) translateY(-120%);
-  position: absolute;
-  z-index: 1;
-}
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-}
 </style>

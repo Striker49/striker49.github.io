@@ -103,6 +103,11 @@ button:focus-visible {
   #download, #language-icon {
     display: none;
   }
+  #project-list {
+    justify-items: center;
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
 }
 body {
   background: linear-gradient(135deg, #1e3c72, #2a5298);
@@ -193,4 +198,24 @@ ul {
 html {
   scroll-behavior: smooth;
   overflow-x: auto;
+}
+.avatar {
+  border-radius: 50%;
+  max-width: 100%;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  transform: translateX(-110%) translateY(-120%);
+  position: absolute;
+  z-index: 1;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
