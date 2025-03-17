@@ -29,7 +29,8 @@ export default defineComponent({
   <div>
     <header class>
       <img src="/src/assets/sr2.png" alt="Language Icon" style="position: absolute; height: 5rem; width: 5rem; left: 0rem;">
-        <ul>
+      <button id="menu-button">☰</button>
+        <ul id="menu">
           <li><a href="#home">{{ $t("Home") }}</a></li>
           <li><a href="#skills">{{ $t("skills") }}</a></li>
           <li><a href="#projects">{{ $t("projects") }}</a></li>

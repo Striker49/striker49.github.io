@@ -21,16 +21,6 @@ a {
 a:hover {
   color: #535bf2;
 }
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-  color:#deea5a;
-  text-shadow: 0 0.1em #050958aa;
-}
-h2 {
-  font-size: 2.2em;
-  text-shadow: 0 0.1em #050958aa;
-}
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -49,9 +39,15 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
-
-.card {
-  padding: 2em;
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  color:#deea5a;
+  text-shadow: 0 0.1em #050958aa;
+}
+h2 {
+  font-size: 2.2em;
+  text-shadow: 0 0.1em #050958aa;
 }
 
 #app {
@@ -78,7 +74,7 @@ button:focus-visible {
 }
 @media screen and (max-width: 800px) {
   header {
-    height: auto; /* Adjust header height */
+    height: auto;
     padding: 0 0;
   }
 
@@ -111,6 +107,23 @@ button:focus-visible {
   .project-desc {
     max-width: 80%;
     margin-left: 10%;
+  }
+  #menu-button {
+    display:block !important;
+  }
+  #menu {
+    display: none; /* Hide menu by default */
+    flex-direction: column;
+    position: absolute;
+    background:#021c4b;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  #menu.show {
+    display: flex;
   }
 }
 body {
@@ -198,6 +211,13 @@ ul {
 }
 #home, #skills, #projects {
   scroll-margin-top: 100px;
+}
+#menu-button {
+  position:fixed;
+  margin-left: 46%;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  display:none;
 }
 html {
   scroll-behavior: smooth;
