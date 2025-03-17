@@ -78,7 +78,7 @@ export default defineComponent({
         <ul class="project-list" id="project-list" style="position: relative; justify-content: center">
           <li class="project" data-img="/src/assets/game.png"><h2>ft_transcendence</h2><img src="/src/assets/game.png" height="400px" width="500"><div class="project-desc">{{ $t("transcendenceDesc") }}</div></li>
           <li class="project" data-img="/src/assets/webserv.png"><h2 class="project">Webserv</h2><div><img src="/src/assets/webserv.png" alt="Webserv image" height="400px"><div class="project-desc">{{ $t("webservDesc") }}</div></div></li>
-          <li class="project" data-img="/src/assets/no_image.jpg"><h2 class="project">Inception</h2><div><img src="/src/assets/no_Image_Available.jpg" alt="Inception image" height="400px"><div class="project-desc">{{ $t("inceptionDesc") }}</div></div></li>
+          <li class="project" data-img="/src/assets/no_image.jpg"><h2 class="project">Inception</h2><div><img src="/src/assets/no_image.jpg" alt="Inception image" height="400px"><div class="project-desc">{{ $t("inceptionDesc") }}</div></div></li>
           <li class="project" data-img="/src/assets/cub3d.png" data-gif="/src/assets/cub3d.gif"><h2 class="project">Cub3D</h2><div><img class="static" src="/src/assets/cub3d.png" alt="Cub3D image" height="400px"><img class="active" src="/src/assets/cub3d.gif" alt="Cub3D gif" height="400px"><div class="project-desc">{{ $t("cub3dDesc") }}</div></div></li>
         </ul>
         <a href="/src/assets/CV 2025_FR_EN.pdf.pdf" download="roy_sebastien" style="position: relative; margin-right: 3rem; font-size: 2rem; top: 4rem;"><img src="/src/assets/download-white.png" style="position: relative; height: 2rem; right: 0.5rem;">{{ $t("download") }}</a>
