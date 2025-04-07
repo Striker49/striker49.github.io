@@ -77,10 +77,10 @@ export default defineComponent({
         <b>{{ $t("projects")}}</b>
       </h1>
         <ul class="project-list" id="project-list" style="position: relative; justify-content: center">
-          <li class="project" data-img="/src/assets/game.png"><h2>ft_transcendence</h2><img src="/src/assets/game.png" height="400px" width="500"><div class="project-desc">{{ $t("transcendenceDesc") }}</div></li>
-          <li class="project" data-img="/src/assets/webserv2.png"><h2 class="project">Webserv</h2><div><img src="/src/assets/webserv2.png" alt="Webserv image" height="400px"><div class="project-desc">{{ $t("webservDesc") }}</div></div></li>
-          <li class="project" data-img="/src/assets/inception.png"><h2 class="project">Inception</h2><div><img src="/src/assets/inception.png" alt="Inception image" height="400px"><div class="project-desc">{{ $t("inceptionDesc") }}</div></div></li>
-          <li class="project" data-img="/src/assets/cub3d.png" data-gif="/src/assets/cub3d.gif"><h2 class="project">Cub3D</h2><div><img class="static" src="/src/assets/cub3d.png" alt="Cub3D image" height="400px" width="400px"><img class="active" src="/src/assets/cub3d.gif" alt="Cub3D gif" height="400px"><div class="project-desc">{{ $t("cub3dDesc") }}</div></div></li>
+          <li class="project" data-img="/src/assets/game.png"><h2>ft_transcendence</h2><a href="https://github.com/Striker49/ft_transcendence" target="_blank"><img src="/src/assets/game.png" height="400px" width="500"></a><div class="project-desc">{{ $t("transcendenceDesc") }}</div></li>
+          <li class="project" data-img="/src/assets/webserv2.png"><h2 class="project">Webserv</h2><div><a href="https://github.com/Striker49/webserv" target="_blank"><img src="/src/assets/webserv2.png" alt="Webserv image" height="400px"></a><div class="project-desc">{{ $t("webservDesc") }}</div></div></li>
+          <li class="project" data-img="/src/assets/inception.png"><h2 class="project">Inception</h2><div><a href="https://github.com/Striker49/inception" target="_blank"><img src="/src/assets/inception.png" alt="Inception image" height="400px"></a><div class="project-desc">{{ $t("inceptionDesc") }}</div></div></li>
+          <li class="project" data-img="/src/assets/cub3d.png" data-gif="/src/assets/cub3d.gif"><h2 class="project">Cub3D</h2><div><a href="https://github.com/Striker49/cub3d" target="_blank"><img class="static" src="/src/assets/cub3d.png" alt="Cub3D image" height="400px" width="400px"><img class="active" src="/src/assets/cub3d.gif" alt="Cub3D gif" height="400px"></a><div class="project-desc">{{ $t("cub3dDesc") }}</div></div></li>
         </ul>
         <a href="/CV_2025_FR_EN.pdf" download="roy_sebastien" style="position: relative; margin-left: -3%; font-size: 2rem; top: 4rem;"><img src="/src/assets/download-white.png" style="position: relative; height: 2rem; right: 0.5rem;">{{ $t("download") }}</a>
       </div>
